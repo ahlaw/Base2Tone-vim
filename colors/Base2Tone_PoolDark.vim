@@ -20,22 +20,22 @@ let s:gui0E = "aa75f5"
 let s:gui0F = "9d63ee"
 
 " Terminal color definitions
-let s:cterm00 = "236   "
-let s:cterm01 = "237   "
-let s:cterm02 = "240   "
-let s:cterm03 = "242   "
-let s:cterm04 = "245   "
-let s:cterm05 = "141   "
-let s:cterm06 = "183   "
-let s:cterm07 = "231   "
-let s:cterm08 = "98    "
-let s:cterm09 = "203   "
-let s:cterm0A = "210   "
-let s:cterm0B = "243   "
-let s:cterm0C = "217   "
-let s:cterm0D = "210   "
-let s:cterm0E = "141   "
-let s:cterm0F = "135   "
+let s:cterm00 = "0"
+let s:cterm01 = "10"
+let s:cterm02 = "11"
+let s:cterm03 = "8"
+let s:cterm04 = "12"
+let s:cterm05 = "4"
+let s:cterm06 = "183"
+let s:cterm07 = "15"
+let s:cterm08 = "98"
+let s:cterm09 = "203"
+let s:cterm0A = "2"
+let s:cterm0B = "243"
+let s:cterm0C = "3"
+let s:cterm0D = "9"
+let s:cterm0E = "1"
+let s:cterm0F = "135"
 
 " Theme setup
 hi clear
@@ -308,7 +308,7 @@ call <sid>hi("gitCommitSummary",  s:gui07, "", s:cterm07, "none", "none")
 " neovim terminal
 if has('nvim')
 hi! link TermCursor Cursor
-hi TermCursorNC ctermfg=236    ctermbg=203    guifg=s:gui00 guibg=s:gui09 guisp=NONE cterm=NONE gui=NONE
+hi TermCursorNC ctermfg=s:cterm00 ctermbg=s:cterm09 guifg=s:gui00 guibg=s:gui09 guisp=NONE cterm=NONE gui=NONE
   let g:terminal_color_0  = "#" . s:gui00
   let g:terminal_color_1  = "#" . s:gui0F
   let g:terminal_color_2  = "#" . s:gui02
